@@ -1,0 +1,19 @@
+{
+  "name": "code-301",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SageJasinski/city-explorer-api.git"
+  },
+  "author": "Sage Jasinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SageJasinski/city-explorer-api/issues"
+  },
+  "homepage": "https://github.com/SageJasinski/city-explorer-api#readme"
+}
