@@ -3,7 +3,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const axios = require("axios");
+// const axios = require("axios");
 const grabWeather = require("./weatherContent")
 // const {response} = require('express')
 
@@ -13,9 +13,7 @@ const app = express();
 app.use(cors());
 
 //port variable to transfer information on
-let PORT = process.env.PORT || 3004;
-let API = process.env.WEATHER_ACCESS_KEY;
-console.log('api key', API);
+let PORT = process.env.PORT || 3002;
 
 app.listen(PORT, () => console.log('listening for connection', PORT));
 

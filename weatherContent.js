@@ -1,9 +1,10 @@
-const axios = require("axios");
-require("dotenv").config();
+'use strict';
+
+const axios = require('axios');
 
 async function grabWeather(req,res) {
-    let searchQuery = req.query.searchQuery; 
-    let destination = `https://api.weatherbit.io/v2.0/forecast/daily?key=${API}}&city=seattle`;
+  let searchQuery = req.query.searchQuery; 
+  let destination = `http://api.weatherbit.io/v2.0/forecast/daily?key=${process.env.WEATHER_ACCESS_KEY}}&city=${searchQuery}`;
     
     try {
         const respond = await axios.get(destination);
@@ -21,5 +22,5 @@ async function grabWeather(req,res) {
         this.description = weatherObj.weather.description;
     }
   }
-
-module.exports = grabWeather;
+  
+  module.exports = grabWeather;
